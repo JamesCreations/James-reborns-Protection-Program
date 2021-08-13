@@ -1,0 +1,16 @@
+    Function DecryptString_1(ByVal Text As String) As String
+        Dim DecryptedString As String
+        Dim CharFound As Integer
+        Dim DecryptedChar As Integer
+        DecryptedString = ""
+        For N = 1 To Len(Text)
+            CharFound = SearchChar(Mid(Text, N, 1))
+            If CharFound >= 20 Then
+                DecryptedChar = CharFound - 20
+            Else
+                DecryptedChar = CharFound + 236
+            End If
+            DecryptedString = DecryptedString & Chr(DecryptedChar)
+        Next N
+        Return DecryptedString
+    End Function

@@ -1,0 +1,15 @@
+    Public Function RC2Decrypt(ByVal strInput As String, ByVal strPassword As String) As String
+        Dim RC2 As New RC2CryptoServiceProvider
+        Dim HashRC2 As New MD5CryptoServiceProvider
+        Dim strDecrypted As String = ""
+        Try
+            Dim Hash() As Byte = HashRC2.ComputeHash(Encoding.ASCII.GetBytes(strPassword))
+            RC2.Key = Hash
+            RC2.Mode = CipherMode.ECB
+            Dim DESDecrypter As ICryptoTransform = RC2.CreateDecryptor
+            Dim Buffer As Byte() = Convert.FromBase64String(strInput)
+            strDecrypted = Encoding.ASCII.GetString(DESDecrypter.TransformFinalBlock(Buffer, 0, Buffer.Length))
+            Return strDecrypted
+        Catch ex As Exception
+        End Try
+    End Function

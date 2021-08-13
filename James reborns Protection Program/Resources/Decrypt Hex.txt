@@ -1,0 +1,8 @@
+    Public Function Hex2String(ByVal input As String) As String
+        Dim out As New StringBuilder
+        Dim data As String() = Split(input, " ")
+        For Each s As String In data
+            out.Append(Chr("&H" & s))
+        Next
+        Return out.ToString
+    End Function

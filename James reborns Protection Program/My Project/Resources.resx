@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AER256_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AER256_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AES_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AES_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ARMON64_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ARMON64_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Atom128_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atom128_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BASE64_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BASE64_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Caesar_Cipher___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caesar Cipher ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CustomXOR_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CustomXOR_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DecryptString_1___Draven_Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DecryptString_1 ( Draven Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Decrypt_Binary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Decrypt Binary.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Decrypt_CustomLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Decrypt_CustomLine.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Decrypt_Hex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Decrypt Hex.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DES_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DES_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="e1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e1.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="e2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e2.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="e3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e3.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="e4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\e4.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="EnvY_S_Encryption___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnvY'S Encryption ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ESAB46_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESAB46_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EZIP64_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EZIP64_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FERON74_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FERON74_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GILA7_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GILA7_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HAZZ15_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HAZZ15_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MD5___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MD5 ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MEGAN35_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MEGAN35_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="OKTO3_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OKTO3_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Polymorphic_Stairs___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Polymorphic Stairs ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="pr0t3_decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pr0t3_decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="r1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\r1.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="r2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\r2.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="r3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\r3.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="r4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\r4.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="r5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\r5.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="RC2___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RC2 ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Rijndael___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rijndael ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RSA_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RSA_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Stairs___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stairs ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TIGO3FX_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIGO3FX_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TripleDES_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TripleDES_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TRIPO5_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TRIPO5_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="UnZip_deflate___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnZip_deflate ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="UnZip_G____Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UnZip_G  ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="VeginereDecrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\VeginereDecrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Vernam___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vernam ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="XOR_Decrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XOR_Decrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ZARA128_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZARA128_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ZONG22_Decode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZONG22_Decode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="_3DES___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3DES ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RC4___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RC4 ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RSM___Decrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RSM ( Decrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="AER256_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AER256_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="AES_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AES_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ARMON64_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ARMON64_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Atbash_Cipher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atbash_Cipher.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Atom128_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Atom128_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="BASE64_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BASE64_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Caesar_Cipher___Encrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Caesar Cipher ( Encrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ConvertToBinary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ConvertToBinary.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CryptString_1___Draven__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CryptString_1 ( Draven ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CustomXOR_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CustomXOR_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DES_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DES_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Encrypt_CustomLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Encrypt_CustomLine.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EnvY_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EnvY_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ESAB46_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESAB46_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="EZIP64_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EZIP64_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="FERON74_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FERON74_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="GILA7_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GILA7_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HAZZ15_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HAZZ15_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HEX_ENCRYPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HEX ENCRYPT.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MD5_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MD5_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MEGAN35_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MEGAN35_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="OKTO3_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OKTO3_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Polymorphic_Stairs___Encrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Polymorphic Stairs ( Encrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="pr0t3_encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pr0t3_encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RC2Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RC2Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RC4_ENCRYPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RC4 ENCRYPT.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Rijndaelcrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rijndaelcrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ROT__13_ENCRYPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ROT -13 ENCRYPT.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RSA_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RSA_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RSMEncrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RSMEncrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Stairs___Encrypt__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stairs ( Encrypt ).txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TIGO3FX_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TIGO3FX_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TripleDES_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TripleDES_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="TRIPO5_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TRIPO5_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="vernam_encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vernam encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Vigenere_encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Vigenere encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="XOR_Encrypt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XOR_Encrypt.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ZARA128_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZARA128_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Zip_deflate_ENCRYPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zip_deflate ENCRYPT.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="Zip_G_ENCRYPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zip_G ENCRYPT.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="ZONG22_Encode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZONG22_Encode.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="_3DES_ENCRYPT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3DES ENCRYPT.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HMACMD5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMACMD5.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HMACRIPEMD160" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMACRIPEMD160.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HMACSHA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMACSHA1.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HMACSHA256" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMACSHA256.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HMACSHA384" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMACSHA384.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="HMACSHA512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HMACSHA512.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MACTripleDES" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MACTripleDES.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="MD5Hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MD5Hash.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="RIPEMD160Hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RIPEMD160Hash.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SHA1Hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHA1Hash.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SHA256Hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHA256Hash.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SHA348Hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHA348Hash.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="SHA512Hash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SHA512Hash.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+</root>

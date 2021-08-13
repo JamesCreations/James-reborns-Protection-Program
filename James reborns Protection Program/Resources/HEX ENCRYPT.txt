@@ -1,0 +1,8 @@
+    Public Function String2Hex(ByVal input As String) As String
+        Dim out As New StringBuilder
+        For Each c As String In input
+            Dim temp As String = Hex(Asc(c))
+            out.Append(temp & " ")
+        Next
+        Return out.ToString.Substring(0, out.Length - 1)
+    End Function

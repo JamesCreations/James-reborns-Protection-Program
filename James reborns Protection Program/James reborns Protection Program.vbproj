@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D8E4CA8-2661-477F-8790-0787D3522DCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>James_reborns_Protection_Program.My.MyApplication</StartupObject>
+    <RootNamespace>James_reborns_Protection_Program</RootNamespace>
+    <AssemblyName>James reborns Protection Program</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>James reborns Protection Program.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>James reborns Protection Program.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>yolo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\James reborns Text Encryption\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\algorithms.vb" />
+    <Compile Include="Classes\ascii.vb" />
+    <Compile Include="Classes\BLOWFISH.vb" />
+    <Compile Include="Classes\Class3.vb" />
+    <Compile Include="Classes\clsCrypto.vb" />
+    <Compile Include="Classes\cTripleDES.vb" />
+    <Compile Include="Classes\DecryptAlo.vb" />
+    <Compile Include="Classes\GenRandom.vb" />
+    <Compile Include="Classes\Pastebin.vb" />
+    <Compile Include="Classes\PolyRC4.vb" />
+    <Compile Include="Classes\RandomPool.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\veginer1.vb" />
+    <Compile Include="Classes\vernam.vb" />
+    <Compile Include="Classes\vernam1.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="JamesrebornsProtections.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JamesrebornsProtections.Designer.vb">
+      <DependentUpon>JamesrebornsProtections.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\PastebinnShit.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Classes\RandomPool.resx">
+      <DependentUpon>RandomPool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JamesrebornsProtections.resx">
+      <DependentUpon>JamesrebornsProtections.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1.txt" />
+    <None Include="Resources\e2.txt" />
+    <None Include="Resources\e3.txt" />
+    <None Include="Resources\e4.txt" />
+    <None Include="Resources\r1.txt" />
+    <None Include="Resources\r2.txt" />
+    <None Include="Resources\r3.txt" />
+    <None Include="Resources\r4.txt" />
+    <None Include="Resources\r5.txt" />
+    <None Include="Resources\3DES %28 Decrypt %29.txt" />
+    <None Include="Resources\AER256_Decrypt.txt" />
+    <None Include="Resources\AES_Decrypt.txt" />
+    <None Include="Resources\ARMON64_Decrypt.txt" />
+    <None Include="Resources\Atom128_Decode.txt" />
+    <None Include="Resources\BASE64_Decode.txt" />
+    <None Include="Resources\Caesar Cipher %28 Decrypt %29.txt" />
+    <None Include="Resources\CustomXOR_Decrypt.txt" />
+    <None Include="Resources\Decrypt Binary.txt" />
+    <None Include="Resources\Decrypt Hex.txt" />
+    <None Include="Resources\Decrypt_CustomLine.txt" />
+    <None Include="Resources\DecryptString_1 %28 Draven Decrypt %29.txt" />
+    <None Include="Resources\DES_Decrypt.txt" />
+    <None Include="Resources\EnvY%27S Encryption %28 Decrypt %29.txt" />
+    <None Include="Resources\ESAB46_Decode.txt" />
+    <None Include="Resources\EZIP64_Decrypt.txt" />
+    <None Include="Resources\FERON74_Decode.txt" />
+    <None Include="Resources\GILA7_Decode.txt" />
+    <None Include="Resources\HAZZ15_Decode.txt" />
+    <None Include="Resources\MEGAN35_Decode.txt" />
+    <None Include="Resources\OKTO3_Decrypt.txt" />
+    <None Include="Resources\Polymorphic Stairs %28 Decrypt %29.txt" />
+    <None Include="Resources\pr0t3_decrypt.txt" />
+    <None Include="Resources\RC2 %28 Decrypt %29.txt" />
+    <None Include="Resources\Rijndael %28 Decrypt %29.txt" />
+    <None Include="Resources\RSA_Decrypt.txt" />
+    <None Include="Resources\Stairs %28 Decrypt %29.txt" />
+    <None Include="Resources\TIGO3FX_Decode.txt" />
+    <None Include="Resources\TripleDES_Decrypt.txt" />
+    <None Include="Resources\TRIPO5_Decode.txt" />
+    <None Include="Resources\UnZip_deflate %28 Decrypt %29.txt" />
+    <None Include="Resources\UnZip_G  %28 Decrypt %29.txt" />
+    <None Include="Resources\VeginereDecrypt.txt" />
+    <None Include="Resources\Vernam %28 Decrypt %29.txt" />
+    <None Include="Resources\XOR_Decrypt.txt" />
+    <None Include="Resources\ZARA128_Decode.txt" />
+    <None Include="Resources\ZONG22_Decode.txt" />
+    <None Include="Resources\MD5 %28 Decrypt %29.txt" />
+    <None Include="Resources\RSM %28 Decrypt %29.txt" />
+    <None Include="Resources\RC4 %28 Decrypt %29.txt" />
+    <None Include="Resources\3DES ENCRYPT.txt" />
+    <None Include="Resources\AER256_Encrypt.txt" />
+    <None Include="Resources\AES_Encrypt.txt" />
+    <None Include="Resources\ARMON64_Encrypt.txt" />
+    <None Include="Resources\Atbash_Cipher.txt" />
+    <None Include="Resources\Atom128_Encode.txt" />
+    <None Include="Resources\BASE64_Encode.txt" />
+    <None Include="Resources\Caesar Cipher %28 Encrypt %29.txt" />
+    <None Include="Resources\ConvertToBinary.txt" />
+    <None Include="Resources\CryptString_1 %28 Draven %29.txt" />
+    <None Include="Resources\CustomXOR_Encrypt.txt" />
+    <None Include="Resources\DES_Encrypt.txt" />
+    <None Include="Resources\Encrypt_CustomLine.txt" />
+    <None Include="Resources\EnvY_Encrypt.txt" />
+    <None Include="Resources\ESAB46_Encode.txt" />
+    <None Include="Resources\EZIP64_Encrypt.txt" />
+    <None Include="Resources\FERON74_Encode.txt" />
+    <None Include="Resources\GILA7_Encode.txt" />
+    <None Include="Resources\HAZZ15_Encode.txt" />
+    <None Include="Resources\HEX ENCRYPT.txt" />
+    <None Include="Resources\MD5_Encrypt.txt" />
+    <None Include="Resources\MEGAN35_Encode.txt" />
+    <None Include="Resources\OKTO3_Encrypt.txt" />
+    <None Include="Resources\Polymorphic Stairs %28 Encrypt %29.txt" />
+    <None Include="Resources\pr0t3_encrypt.txt" />
+    <None Include="Resources\RC2Encrypt.txt" />
+    <None Include="Resources\RC4 ENCRYPT.txt" />
+    <None Include="Resources\Rijndaelcrypt.txt" />
+    <None Include="Resources\ROT -13 ENCRYPT.txt" />
+    <None Include="Resources\RSA_Encrypt.txt" />
+    <None Include="Resources\Stairs %28 Encrypt %29.txt" />
+    <None Include="Resources\TIGO3FX_Encode.txt" />
+    <None Include="Resources\TripleDES_Encrypt.txt" />
+    <None Include="Resources\TRIPO5_Encode.txt" />
+    <None Include="Resources\XOR_Encrypt.txt" />
+    <None Include="Resources\ZARA128_Encode.txt" />
+    <None Include="Resources\Zip_deflate ENCRYPT.txt" />
+    <None Include="Resources\Zip_G ENCRYPT.txt" />
+    <None Include="Resources\ZONG22_Encode.txt" />
+    <None Include="Resources\RSMEncrypt.txt" />
+    <None Include="Resources\vernam encrypt.txt" />
+    <None Include="Resources\Vigenere encrypt.txt" />
+    <None Include="Resources\HMACMD5.txt" />
+    <None Include="Resources\HMACRIPEMD160.txt" />
+    <None Include="Resources\HMACSHA1.txt" />
+    <None Include="Resources\HMACSHA256.txt" />
+    <None Include="Resources\HMACSHA384.txt" />
+    <None Include="Resources\HMACSHA512.txt" />
+    <None Include="Resources\MACTripleDES.txt" />
+    <None Include="Resources\MD5Hash.txt" />
+    <None Include="Resources\RIPEMD160Hash.txt" />
+    <None Include="Resources\SHA1Hash.txt" />
+    <None Include="Resources\SHA256Hash.txt" />
+    <None Include="Resources\SHA348Hash.txt" />
+    <None Include="Resources\SHA512Hash.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="yolo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

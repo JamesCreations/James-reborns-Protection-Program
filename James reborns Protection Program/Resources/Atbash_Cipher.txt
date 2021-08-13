@@ -1,0 +1,15 @@
+    Function Atbash_Cipher(ByVal input As String)
+        Dim result As String = ""
+        For Each x As Char In input
+            If Char.IsLower(x) Then
+                Dim diff As Integer = Asc(x) - Asc("a")
+                result += Chr(Asc("z") - diff)
+            ElseIf Char.IsUpper(x) Then
+                Dim diff As Integer = Asc(x) - Asc("A")
+                result += Chr(Asc("Z") - diff)
+            Else
+                result += x
+            End If
+        Next
+        Return result
+    End Function

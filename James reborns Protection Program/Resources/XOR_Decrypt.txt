@@ -1,0 +1,10 @@
+    Public Function XOR_Decrypt(ByVal Input As String, ByVal pass As String) As String
+        Dim out As New StringBuilder
+        Dim u As Integer
+        For i As Integer = 0 To Input.Length - 1 Step +2
+            Dim tmp As String = Chr(("&H" & Input.Substring(i, 2)) Xor Asc(pass(u)))
+            out.Append(tmp)
+            If u = pass.Length - 1 Then u = 0 Else u = u + 1
+        Next
+        Return out.ToString
+    End Function

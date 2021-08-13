@@ -1,0 +1,9 @@
+    Public Shared Function Md5Encrypt(bytData As Byte(), sKey As String, Optional tMode As CipherMode = CipherMode.ECB, Optional tPadding As PaddingMode = PaddingMode.PKCS7) As Byte()
+        Dim mD5CryptoServiceProvider As MD5CryptoServiceProvider = New MD5CryptoServiceProvider()
+        Dim key As Byte() = mD5CryptoServiceProvider.ComputeHash(Encoding.UTF8.GetBytes(sKey))
+        mD5CryptoServiceProvider.Clear()
+        Dim tripleDESCryptoServiceProvider As TripleDESCryptoServiceProvider = New TripleDESCryptoServiceProvider() With {.Key = key, .Mode = tMode, .Padding = tPadding}
+        Dim result As Byte() = tripleDESCryptoServiceProvider.CreateEncryptor().TransformFinalBlock(bytData, 0, bytData.Length)
+        tripleDESCryptoServiceProvider.Clear()
+        Return result
+    End Function

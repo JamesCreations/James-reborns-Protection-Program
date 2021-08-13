@@ -1,0 +1,18 @@
+    Public Function TripleDES_Encrypt(ByVal input As String, ByVal pass As String) As String
+        Dim TripleDES As New TripleDESCryptoServiceProvider
+        Dim Hash_TripleDES As New MD5CryptoServiceProvider
+        Dim encrypted As String = ""
+        Try
+            Dim hash(23) As Byte
+            Dim temp As Byte() = Hash_TripleDES.ComputeHash(Encoding.ASCII.GetBytes(pass))
+            Array.Copy(temp, 0, hash, 0, 16)
+            Array.Copy(temp, 0, hash, 15, 8)
+            TripleDES.Key = hash
+            TripleDES.Mode = CipherMode.ECB
+            Dim DESEncrypter As ICryptoTransform = TripleDES.CreateEncryptor
+            Dim Buffer As Byte() = Encoding.ASCII.GetBytes(input)
+            encrypted = Convert.ToBase64String(DESEncrypter.TransformFinalBlock(Buffer, 0, Buffer.Length))
+            Return encrypted
+        Catch ex As Exception
+        End Try
+    End Function

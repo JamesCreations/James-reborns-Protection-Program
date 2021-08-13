@@ -1,0 +1,17 @@
+    Public Function DES_Encrypt(ByVal input As String, ByVal pass As String) As String
+        Dim DES As New DESCryptoServiceProvider
+        Dim Hash_DES As New MD5CryptoServiceProvider
+        Dim encrypted As String = ""
+        Try
+            Dim hash(7) As Byte
+            Dim temp As Byte() = Hash_DES.ComputeHash(Encoding.ASCII.GetBytes(pass))
+            Array.Copy(temp, 0, hash, 0, 8)
+            DES.Key = hash
+            DES.Mode = CipherMode.ECB
+            Dim DESEncrypter As ICryptoTransform = DES.CreateEncryptor
+            Dim Buffer As Byte() = Encoding.ASCII.GetBytes(input)
+            encrypted = Convert.ToBase64String(DESEncrypter.TransformFinalBlock(Buffer, 0, Buffer.Length))
+            Return encrypted
+        Catch ex As Exception
+        End Try
+    End Function

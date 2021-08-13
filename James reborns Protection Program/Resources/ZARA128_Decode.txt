@@ -1,0 +1,9 @@
+    Public Function ZARA128_Decode(ByVal input As String) As String
+        Dim out As New StringBuilder
+        Dim data As String() = Split(input, " ")
+        For Each s As String In data
+            Dim temp As Integer = s - 1337
+            out.Append(Chr(temp))
+        Next
+        Return out.ToString
+    End Function

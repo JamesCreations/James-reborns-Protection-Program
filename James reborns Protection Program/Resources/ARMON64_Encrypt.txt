@@ -1,0 +1,32 @@
+   Public Function ARMON64_Encrypt(ByVal message As String, Optional ByVal key As String = "ARMON64-CRYPO") As String
+        Dim out As New System.Text.StringBuilder
+        If key.Length < 3 Then Return message
+        Dim intkey() As Byte = System.Text.Encoding.UTF8.GetBytes(key)
+        Dim x As Integer
+        Do While x < message.Length
+            Dim hextemp As String = ""
+            Dim y As String = ""
+            If x > 0 Then y = "+"
+            For i As Integer = x To Math.Round(key.Length / 2)
+                If i < message.Length Then hextemp += Hex(Asc(message(i)))
+            Next
+            Dim thenum As Double = "&H" & hextemp
+            If Information.IsNumeric(thenum) = False Then Return message
+            For z As Integer = 0 To key.Length - 1
+                Dim operation As Integer = z Mod 4
+                Select Case operation
+                    Case 0
+                        thenum += intkey(z)
+                    Case 1
+                        thenum /= intkey(z)
+                    Case 2
+                        thenum -= intkey(z)
+                    Case 3
+                        thenum *= 0.01 * intkey(z)
+                End Select
+            Next
+            out.Append(y & thenum)
+            x += Math.Round(key.Length / 2)
+        Loop
+        Return out.ToString.Replace(",", ".")
+    End Function

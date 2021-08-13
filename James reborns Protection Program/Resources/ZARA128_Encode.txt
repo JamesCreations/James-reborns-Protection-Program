@@ -1,0 +1,8 @@
+    Public Function ZARA128_Encode(ByVal input As String) As String
+        Dim out As New StringBuilder
+        For Each c As Char In input
+            Dim temp As Integer = Asc(c) + 1337
+            out.Append(temp.ToString & " ")
+        Next
+        Return out.ToString.Substring(0, out.Length - 1)
+    End Function

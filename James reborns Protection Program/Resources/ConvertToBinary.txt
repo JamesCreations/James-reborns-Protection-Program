@@ -1,0 +1,7 @@
+    Private Function ConvertToBinary(ByVal str As String) As String
+        Dim converted As New StringBuilder
+        For Each b As Byte In Encoding.ASCII.GetBytes(str)
+            converted.Append(Convert.ToString(b, 2).PadLeft(8, "0"))
+        Next
+        Return converted.ToString()
+    End Function

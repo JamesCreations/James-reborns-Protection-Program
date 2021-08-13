@@ -1,0 +1,15 @@
+    Public Shared Function Zip_deflate(ByVal text As String) As String
+        Dim buffer As Byte() = Encoding.Unicode.GetBytes(text)
+        Dim ms As New MemoryStream()
+        Using zip__1 As New DeflateStream(ms, CompressionMode.Compress, True)
+            zip__1.Write(buffer, 0, buffer.Length)
+        End Using
+        ms.Position = 0
+        Dim outStream As New MemoryStream()
+        Dim compressed As Byte() = New Byte(ms.Length - 1) {}
+        ms.Read(compressed, 0, compressed.Length)
+        Dim gzBuffer As Byte() = New Byte(compressed.Length + 3) {}
+        System.Buffer.BlockCopy(compressed, 0, gzBuffer, 4, compressed.Length)
+        System.Buffer.BlockCopy(BitConverter.GetBytes(buffer.Length), 0, gzBuffer, 0, 4)
+        Return Convert.ToBase64String(gzBuffer)
+    End Function

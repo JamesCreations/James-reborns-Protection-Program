@@ -1,0 +1,15 @@
+ Public Shared Function RSMEncrypt(data As Byte(), key As Byte()) As Byte()
+            Dim rfc2898DeriveBytes As Rfc2898DeriveBytes = New Rfc2898DeriveBytes(key, New Byte(7) {}, 1)
+            Dim rijndaelManaged As RijndaelManaged = New RijndaelManaged()
+            rijndaelManaged.Key = rfc2898DeriveBytes.GetBytes(16)
+            rijndaelManaged.IV = rfc2898DeriveBytes.GetBytes(16)
+            ' The following expression was wrapped in a checked-expression
+            Dim array As Byte() = New Byte(data.Length + 15 + 1 - 1) {}
+            Buffer.BlockCopy(Guid.NewGuid().ToByteArray(), 0, array, 0, 16)
+            Buffer.BlockCopy(data, 0, array, 16, data.Length)
+            Return rijndaelManaged.CreateEncryptor().TransformFinalBlock(array, 0, array.Length)
+        End Function
+
+        Public Shared Function RSM(Files As Byte(), k As String) As Byte()
+            Return algorithms.RSMEncrypt(Files, Encoding.[Default].GetBytes(k))
+        End Function

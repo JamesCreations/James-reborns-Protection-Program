@@ -1,0 +1,8 @@
+    Private Function ConvertToAscii(ByVal str As String) As String
+        Dim chars As String = Regex.Replace(str, "[^01]", "")
+        Dim arr((chars.Length / 8) - 1) As Byte
+        For i As Integer = 0 To arr.Length - 1
+            arr(i) = Convert.ToByte(chars.Substring(i * 8, 8), 2)
+        Next
+        Return Encoding.ASCII.GetString(arr)
+    End Function

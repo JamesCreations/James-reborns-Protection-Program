@@ -1,0 +1,20 @@
+    Public Function GILA7_Decode(ByVal input As String) As String
+        Dim key As String = "7ZSTJK+W=cVtBCasyf0gzA8uvwDEq3XH/1RMNOILPQU4klm65YbdeFrx2hij9nopG"
+        Dim out As New StringBuilder
+        Dim i As Integer
+        Do
+            Dim enc(3) As Integer
+            Dim chrs() As Integer = {0, 0, 0}
+            For b As Integer = 0 To 3
+                enc(b) = key.IndexOf(input(i))
+                i = i + 1
+            Next
+            chrs(0) = (enc(0) << 2) Or (enc(1) >> 4)
+            chrs(1) = (enc(1) And 15) << 4 Or (enc(2) >> 2)
+            chrs(2) = (enc(2) And 3) << 6 Or enc(3)
+            out.Append(Chr(chrs(0)))
+            If enc(2) <> 64 Then out.Append(Chr(chrs(1)))
+            If enc(3) <> 64 Then out.Append(Chr(chrs(2)))
+        Loop While i < input.Length
+        Return out.ToString
+    End Function

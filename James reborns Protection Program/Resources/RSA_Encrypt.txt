@@ -1,0 +1,10 @@
+    Public Function RSA_Encrypt(ByVal Input As String) As String
+        Dim cp As New CspParameters
+        cp.Flags = CspProviderFlags.UseMachineKeyStore
+        cp.KeyContainerName = "Keys"
+        Dim RSA As New RSACryptoServiceProvider(cp)
+
+        Dim buffer As Byte() = Encoding.UTF8.GetBytes(Input)
+        Dim encrypted As Byte() = RSA.Encrypt(buffer, True)
+        Return Convert.ToBase64String(encrypted)
+    End Function

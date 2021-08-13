@@ -1,0 +1,11 @@
+    Public Function Vernam(ByVal system As String, ByVal key As String) As String
+        Dim i, isystem, ikey As Integer
+        For i = 1 To Len(key)
+            ikey = ikey + AscW(Mid(key, i, 1))
+        Next i
+        For i = 1 To Len(system)
+            isystem = AscW(Mid(system, i, 1)) - ikey Mod 5555
+            Vernam = Vernam & ChrW(isystem)
+        Next i
+
+    End Function

@@ -1,0 +1,28 @@
+    Public Function Rot13(ByVal value As String) As String
+        Dim lowerA As Integer = Asc("a"c)
+        Dim lowerZ As Integer = Asc("z"c)
+        Dim lowerM As Integer = Asc("m"c)
+        Dim upperA As Integer = Asc("A"c)
+        Dim upperZ As Integer = Asc("Z"c)
+        Dim upperM As Integer = Asc("M"c)
+        Dim array As Char() = value.ToCharArray
+        Dim i As Integer
+        For i = 0 To array.Length - 1
+            Dim number As Integer = Asc(array(i))
+            If ((number >= lowerA) AndAlso (number <= lowerZ)) Then
+                If (number > lowerM) Then
+                    number -= 13
+                Else
+                    number += 13
+                End If
+            ElseIf ((number >= upperA) AndAlso (number <= upperZ)) Then
+                If (number > upperM) Then
+                    number -= 13
+                Else
+                    number += 13
+                End If
+            End If
+            array(i) = Chr(number)
+        Next i
+        Return New String(array)
+    End Function

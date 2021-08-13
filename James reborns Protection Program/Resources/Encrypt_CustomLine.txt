@@ -1,0 +1,18 @@
+        Private Shared Function converttoline(ByVal text_to_convert As String) As String
+        Dim str2 As String = text_to_convert
+        If str2.Contains("|") Then
+            Return str2.Replace(" || ", "0").Replace(" | ", "1")
+        End If
+        Return str2.Replace("0", " || ").Replace("1", " | ")
+    End Function
+	
+	Public Shared Function Encrypt_CustomLine(ByVal text_to_Encrypt As String) As String
+        Dim str2 As String = text_to_Encrypt
+        Dim builder As New StringBuilder
+        Dim num As Byte
+        For Each num In Encoding.ASCII.GetBytes(text_to_Encrypt)
+            builder.Append(Convert.ToString(num, 2).PadLeft(8, "0"c))
+            builder.Append(" ")
+        Next
+        Return converttoline(builder.ToString.Substring(0, (builder.ToString.Length - 1)))
+    End Function

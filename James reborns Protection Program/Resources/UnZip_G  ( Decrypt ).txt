@@ -1,0 +1,13 @@
+    Public Shared Function UnZip_G(ByVal compressedText As String) As String
+        Dim gzBuffer As Byte() = Convert.FromBase64String(compressedText)
+        Using ms As New MemoryStream()
+            Dim msgLength As Integer = BitConverter.ToInt32(gzBuffer, 0)
+            ms.Write(gzBuffer, 4, gzBuffer.Length - 4)
+            Dim buffer As Byte() = New Byte(msgLength - 1) {}
+            ms.Position = 0
+            Using zip As New GZipStream(ms, CompressionMode.Decompress)
+                zip.Read(buffer, 0, buffer.Length)
+            End Using
+            Return Encoding.Unicode.GetString(buffer, 0, buffer.Length)
+        End Using
+    End Function

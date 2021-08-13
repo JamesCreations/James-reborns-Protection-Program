@@ -1,0 +1,18 @@
+ Public Function RSMDecrypt(ByVal Dec_t As Byte(), ByVal James As Byte()) As Byte()
+        Dim aeretrtyty As New Rfc2898DeriveBytes(James, New Byte(7) {}, 1)
+
+        Dim rijndaelManagedAs New RijndaelManaged
+        rijndaelManaged.Key = aeretrtyty.GetBytes(16)
+        rijndaelManaged.IV = aeretrtyty.GetBytes(16)
+
+        Dim יפםפהבםוםקעהה As Byte() = rijndaelManaged.CreateDecryptor.TransformFinalBlock(Dec_t, 0, Dec_t.Length)
+        Dim יפםפהבםוםקעההיפםפהבםוםקעהה(יפםפהבםוםקעהה.Length - 17) As Byte
+        Buffer.BlockCopy(יפםפהבםוםקעהה, 16, יפםפהבםוםקעההיפםפהבםוםקעהה, 0, יפםפהבםוםקעהה.Length - 16)
+
+        Return יפםפהבםוםקעההיפםפהבםוםקעהה
+    End Function
+
+
+    Public Function 료하는것을것을고는있다하지을(ByVal Files As Byte(), ByVal k As String) As Byte()
+        Return RSMD_EC(Files, Encoding.Default.GetBytes(k))
+    End Function

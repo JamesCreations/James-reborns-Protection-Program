@@ -1,0 +1,15 @@
+   Public Function HMACRIPEMD160(ByVal input As String) As String
+        Dim MD5 As New HMACRIPEMD160
+        Dim Data As Byte()
+        Dim Result As Byte()
+        Dim Res As String = ""
+        Dim Tmp As String = ""
+        Data = Encoding.ASCII.GetBytes(input)
+        Result = MD5.ComputeHash(Data)
+        For i As Integer = 0 To Result.Length - 1
+            Tmp = Hex(Result(i))
+            If Len(Tmp) = 1 Then Tmp = "0" & Tmp
+            Res += Tmp
+        Next
+        Return Res
+    End Function

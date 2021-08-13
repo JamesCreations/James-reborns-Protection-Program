@@ -1,0 +1,14 @@
+    Public Function c_Decrypt(ByVal CipherText As String, ByVal Key As Integer) As String
+        Dim CipherChar() As Char = CipherText.ToCharArray()
+        Dim Ascii(CipherChar.Length) As Integer
+        For Count As Integer = 0 To CipherChar.Length - 1
+            Ascii(Count) = Asc(CipherChar(Count))
+            If Ascii(Count) >= 65 And Ascii(Count) <= 90 Then
+                Ascii(Count) = ((Ascii(Count) - 65 - (Key Mod 26) + 26)) Mod 26 + 65
+            ElseIf Ascii(Count) >= 97 And Ascii(Count) <= 122 Then
+                Ascii(Count) = (((Ascii(Count) - 97 - (Key Mod 26) + 26)) Mod 26) + 97
+            End If
+            CipherChar(Count) = Chr(Ascii(Count))
+        Next
+        Return CipherChar
+    End Function

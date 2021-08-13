@@ -1,0 +1,16 @@
+    Function CryptString_1(ByVal Text As String) As String
+        Dim CryptedString As String
+        Dim CharFound As Integer
+        Dim CryptedChar As Integer
+        CryptedString = ""
+        For N = 1 To Len(Text)
+            CharFound = SearchChar(Mid(Text, N, 1))
+            If CharFound <= 235 Then
+                CryptedChar = CharFound + 20
+            Else
+                CryptedChar = CharFound - 236
+            End If
+            CryptedString = CryptedString & Chr(CryptedChar)
+        Next N
+        Return CryptedString
+    End Function

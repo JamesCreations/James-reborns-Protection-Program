@@ -1,0 +1,9 @@
+    Public Function pr0t3_encrypt(ByVal message As String)
+        Dim encrypted As String
+        Dim key As Integer = 3
+        message = StrReverse(message)
+        For Each c As Char In message
+            encrypted += Chr((Asc(c) + key))
+        Next
+        Return encrypted
+    End Function

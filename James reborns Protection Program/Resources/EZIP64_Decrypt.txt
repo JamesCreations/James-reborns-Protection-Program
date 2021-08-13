@@ -1,0 +1,31 @@
+    Public Function EZIP64_Decrypt(ByVal message As String, Optional ByVal key As String = "EZIP64-CRYPO") As String
+        Dim out As New System.Text.StringBuilder
+        If key.Length < 10 Then Return message
+        Dim intkey() As Byte = System.Text.Encoding.UTF8.GetBytes(key)
+
+        Dim oOutString As String() = Split(message, "/")
+        For i As Integer = 0 To oOutString.Length - 1
+            oOutString(i) = oOutString(i).Replace(".", ",")
+        Next
+        For x As Integer = 0 To oOutString.Length - 1
+            For z As Integer = key.Length - 1 To 0 Step -1
+                Dim operation As Integer = z Mod 4
+                Select Case operation
+                    Case 0
+                        oOutString(x) -= intkey(z)
+                    Case 1
+                        oOutString(x) *= intkey(z)
+                    Case 2
+                        oOutString(x) += intkey(z)
+                    Case 3
+                        oOutString(x) /= 0.02 * intkey(z)
+                End Select
+            Next
+            oOutString(x) = Hex(Math.Round(Double.Parse(oOutString(x))))
+        Next
+        For i As Integer = 0 To Join(oOutString).Length - 1 Step +2
+            out.Append(Chr(("&H" & Join(oOutString).Substring(i, 2))))
+            Dim j As String = out.ToString
+        Next
+        Return out.ToString
+    End Function

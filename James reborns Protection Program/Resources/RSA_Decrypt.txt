@@ -1,0 +1,9 @@
+    Public Function RSA_Decrypt(ByVal Input As String) As String
+        Dim cp As New CspParameters
+        cp.Flags = CspProviderFlags.UseMachineKeyStore
+        cp.KeyContainerName = "Keys"
+        Dim RSA As New RSACryptoServiceProvider(cp)
+        Dim buffer As Byte() = Convert.FromBase64String(Input)
+        Dim decrypted As Byte() = RSA.Decrypt(buffer, True)
+        Return Encoding.UTF8.GetString(decrypted)
+    End Function

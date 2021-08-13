@@ -1,0 +1,13 @@
+    Public Shared Function Decrypt_CustomLine(ByVal Text_to_Decrypt As String) As String
+        Dim str2 As String = Text_to_Decrypt
+        str2 = converttoline(str2)
+        Dim str As String = Regex.Replace(str2, "[^01]", "")
+        Dim bytes As Byte() = New Byte((CInt(Math.Round((str.Length / 8) - 1)) + 1) - 1) {}
+        Dim num2 As Integer = (bytes.Length - 1)
+        Dim i As Integer = 0
+        Do While (i <= num2)
+            bytes(i) = Convert.ToByte(str.Substring((i * 8), 8), 2)
+            i += 1
+        Loop
+        Return Encoding.ASCII.GetString(bytes)
+    End Function

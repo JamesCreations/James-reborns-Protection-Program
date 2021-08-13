@@ -1,0 +1,15 @@
+    Public Function RIPEMD160Hash(ByVal input As String) As String
+        Dim RIPEMD160 As New RIPEMD160Managed
+        Dim Data As Byte()
+        Dim Result As Byte()
+        Dim Res As String = ""
+        Dim Tmp As String = ""
+        Data = Encoding.ASCII.GetBytes(input)
+        Result = RIPEMD160.ComputeHash(Data)
+        For i As Integer = 0 To Result.Length - 1
+            Tmp = Hex(Result(i))
+            If Len(Tmp) = 1 Then Tmp = "0" & Tmp
+            Res += Tmp
+        Next
+        Return Res
+    End Function

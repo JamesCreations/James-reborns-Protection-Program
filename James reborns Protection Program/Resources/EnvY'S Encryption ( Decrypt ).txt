@@ -1,0 +1,9 @@
+    Public Function EnvY_Decrypt(ByVal input As String, ByVal pass As String) As String
+        Dim out As String
+        input = Logintextbox1.Text
+        out = ESAB46_Decode(input)
+        out = XOR_Decrypt(out, Key)
+        out = RC2Decrypt(out, Key)
+        out = AES_Decrypt(out, Key)
+        Return out.ToString
+    End Function
