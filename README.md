@@ -10,4 +10,4 @@ Any questions or suggestions join my Discord : https://www.tiny.cc/JR_DiscordSer
 ----------------------------
 How to fix virus popup
 ----------------------------
-Follow These Steps Or Go To : https://support.microsoft.com/en-ca/help/4028485/windows-10-add-an-exclusion-to-windows-security
+https://support.microsoft.com/en-ca/help/4028485/windows-10-add-an-exclusion-to-windows-security
